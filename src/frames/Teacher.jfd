@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par l {seq {space :p:32:p, par l:::p {comp button2:::::x, comp button1:::::x}, space ::374:x, par l {comp button4:::p::p, comp button3:::p:136:p}, space :p:112:p}, seq l {space :::p, comp scrollPane1:::p:722:p, space ::27:x}}, par t {comp radioButton3:::p::p, comp radioButton2:::p::p, comp radioButton1:::p::p, comp radioButton4::t:p::p}, space ::94:x}, seq l {space :::p, comp scrollPane2:::p:722:p, space ::210:x}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, comp radioButton1:::p::p, space s:::p, comp radioButton2:::p::p, space :p:31:p, comp radioButton3:::p::p, space s:::p, comp radioButton4:::p::p, space ::208:x}, seq l {comp scrollPane1:::p:202:p, space :::p, comp scrollPane2:::p:97:p, space ::27:x, par b {comp button3::b:p::p, comp button1::b:p::p}, space s:::p, par b {comp button2::b:p::p, comp button4::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Teacher"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Start Test"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Reset"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": ">>Next Easy>>"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": ">>Next Hard>>"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "Category 1"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": "Category 2"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton3"
+				"text": "Category 3"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton4"
+				"text": "Category 4"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton4ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"lineWrap": true
+					"editable": false
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+					"text": "Question Will be Displayed here!"
+					"opaque": false
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea2"
+					"editable": false
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"lineWrap": true
+					"text": "Answer will be displayed here."
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "File"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Open"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 940, 470 )
+		} )
+	}
+}
